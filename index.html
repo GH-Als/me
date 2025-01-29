@@ -5,47 +5,72 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color:  #F7EED3;
             line-height: 1.6;
         }
         .container {
             width: 80%;
             margin: auto;
-            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
         .main-info {
-            background: #333;
-            color: #fff;
+            background:#AAB396;
+            color: black;
             padding: 20px;
         }
         .main-info h1 {
             margin: 0;
         }
         .hobbies, .career, .course {
-            background: #e7e7e7;
+            background: #AAB396;
             padding: 15px;
-            margin-bottom: 10px;
+        }
+        a {
+            color: white;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .image-row {
+            display: flex;
+            justify-content: center;
+        }
+        li{
+            list-style-type: square;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header class="main-info">
-            <h1>Ali Alshamsi</h1>
+            <h1>Ali Alshamsi &rsquo;s Introductive Website</h1>
             <p>Preferred Name: Shamsi</p>
-            <p>Current/Recent Job Title: Student</p>
+            <p>Email: <a href="mailto:b00093040@aus.edu">b00093040@aus.edu</a></p>
+            <p>Connect with me on Discord: shamsi2300</p>
         </header>
 
+        <div class="image-row">
+            <a href="./me-800-by-800.jpeg" target="_blank">
+                <img src="./me-300-by-300.jpeg" alt="Thumbnail Image">
+            </a>
+        </div>
         <section class="career">
-            <h2>Status</h2>
-            <p>Junior II in Computer Science</p>
+            <h2>Introduction</h2>
+            <p>Hello, I&rsquo;m a Junior II studying Computer Science at the Amercian University of Sharjah. I&rsquo;m interested in all things related to technology and many more.</p>
         </section>
 
-       
-
         <section class="career">
-            <h2>Reasons for Pursuing This Degree</h2>
-            <p>I was conflicted between Finance and Computer Science and in the end, I chose Computer Science.</p>
+            <h2>What I hope to learn in this course</h2>
+      
+            <ul>
+                <li>Understand the fundamentals of Software Engineering.</li>
+                <li>Learn the processes of building software and managing resources.  </li>
+                <li>Gain knowledge of the best practices of the industry.</li>
+            </ul>
         </section>
 
         <section class="course">
@@ -53,19 +78,20 @@
             <p>Mainly because it is a major requirement.</p>
         </section>
 
- <section class="hobbies">
-            <h2>Hobbies and Special Interests</h2>
+        <section class="hobbies">
+            <h2>My Favorite Hobby / Activity</h2>
             <ul>
-                <li>I enjoy playing different kinds of sports</li>
-                <LI>   Love learning new things such as history</LI>
-                
+                <li>I enjoy playing different kinds of sports such as Padel</li>
+                <li>Love learning about History</li>
             </ul>
+            <p>Article about Padel: <a>https://www.head.com/en/sports/padel/about</a></p>
         </section>
 
         <section class="fun-fact hobbies">
             <h2>Fun Fact</h2>
-            <p>I don't like fruits</p>
+            <p>I don&rsquo;t like fruits</p>
         </section>
     </div>
+    <h3>Last Updated: 29/01/2024</h3>
 </body>
 </html>
